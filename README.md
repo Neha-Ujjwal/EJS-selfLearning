@@ -18,3 +18,14 @@ The methods are identical when an object or array is passed, but res.json() will
 
 res.send(statusCode)->will return status of the page whereas res.json(statusCode) will just simply write statusCode.
 es.json(404) then res.json forces the argument to JSON and I am writing res.send(404) then his will return a status code 404 not found.
+
+## Template Engine
+
+A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. This approach makes it easier to design an HTML page.
+Some popular template engines that work with Express are Pug, Mustache, and EJS. The Express application generator uses Jade as its default, but it also supports several others.
+
+To render template files, set the following application setting properties, set in app.js in the default app created by the generator:
+
+views, the directory where the template files are located. Eg: app.set('views', './views'). This defaults to the views directory in the application root directory.
+view engine, the template engine to use. For example, to use the Pug template engine: app.set('view engine', 'pug').
+link- https://expressjs.com/en/guide/using-template-engines.html
