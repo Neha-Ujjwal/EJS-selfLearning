@@ -29,3 +29,6 @@ To render template files, set the following application setting properties, set 
 views, the directory where the template files are located. Eg: app.set('views', './views'). This defaults to the views directory in the application root directory.
 view engine, the template engine to use. For example, to use the Pug template engine: app.set('view engine', 'pug').
 link- https://expressjs.com/en/guide/using-template-engines.html
+
+To use template engine we must have a folder named 'views' in our project, where all template files are present.
+We can also change the name of this views folder as per choice by--- app.set('views',path); path is the path of new renamed folder.
